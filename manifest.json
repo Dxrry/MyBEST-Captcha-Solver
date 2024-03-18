@@ -1,0 +1,20 @@
+{
+    "name": "MyBEST: Captcha Solver",
+    "version": "1.0",
+    "description": "Save time by using this extension to solve captchas for you on elearning.bsi.ac.id/login.",
+    "manifest_version": 3,
+    "host_permissions": [
+        "*://elearning.bsi.ac.id/*"
+    ],
+    "icons": {
+        "128": "src/img/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://elearning.bsi.ac.id/*"
+            ],
+            "js": ["src/js/jquery.min.js", "src/js/main.js"]
+        }
+    ]
+}
